@@ -34,6 +34,7 @@ export class ScenelistComponent implements OnInit {
 
     }, error => {
       console.log(error);
+      this.values = JSON.stringify(error);
     });
   }
 
